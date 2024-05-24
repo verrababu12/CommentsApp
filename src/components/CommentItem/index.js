@@ -5,6 +5,7 @@ import './index.css'
 
 const CommentItem = props => {
   const {commentDetails} = props
+  console.log(commentDetails)
   const {id, name, comment, isLiked, initialClassName, date} = commentDetails
   const initial = name ? name[0].toUpperCase() : ''
   const likeTextClassName = isLiked ? 'button active' : 'button'
